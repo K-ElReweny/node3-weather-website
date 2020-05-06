@@ -6,26 +6,35 @@
     <head>
         <title>Weather</title>
         <link rel="icon" href="/img/weather.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
     </head>
 
     <body>
-        <div class="main-content">
-            {{>header}}
-            <p>use this site to get your weather!</p>
+        <div class="container">
+            <div class="jumbotron">
+                {{>header}}
+                <p class="lead">use this site to get your weather!</p>
+                <hr class="my-4">
 
-            <form action="">
-                <input placeholder="Location">
-                <button>Search</button>
-            </form>
+                <form class= "form-inline" action="">
+                    
+                    <input class="form-control mr-sm-2" placeholder="Location">
+                    <button class="btn btn-outline-primary my-2 my-sm-0">Search</button>
+                    
+                </form>
 
-            <p id="message-1"></p>
-            <p id="message-2"></p>
+                <hr class="my-4">
+                <p id="message-1"></p>
+                <p id="message-2"></p>
 
-        </div>
+            </div>
         
         {{>footer}}
+        </div>
         <script src="/js/app.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 
 
